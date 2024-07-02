@@ -17,12 +17,25 @@ Update the `3-music-collection.js` file to do the following:
 
 - Create an empty array named `myCollection`.
 
+
+
+
+
+
 - Create a function named `addToCollection`. It should have this basic structure:
   - ```js
       function addToCollection(collection, title, artist, yearPublished) {
         // your code here...
       }
     ```
+
+
+
+
+
+
+
+
   - This function should:
     - Take in a `collection` parameter. (This allows the function to be reused to add an album to any array of album objects.)
     - Take in the album's `title`, `artist`, `yearPublished` as parameters.
@@ -31,16 +44,32 @@ Update the `3-music-collection.js` file to do the following:
     - Add the new object to the end of the `collection` array.
     - `return` the newly created object.
 
+
+
+
+
+
+
 - Use and Test the `addToCollection` function:
   - Add 6 albums to the `myCollection` array. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
   - `console.log` each album as added using the function's returned value.
   - After all are added, console.log the `myCollection` array.
+
+
+
+
+
 
 - Create a function named `showCollection`. This function should:
   - Take in a `collection` parameter. (This allows it to be reused to show any array of album objects.)
   - Loop through the `collection` and `console.log` each album's information formatted **within a single string**, like: `TITLE by ARTIST, published in YEARPUBLISHED`.
 
 - Test the `showCollection` function.
+
+
+
+
+
 
 - Add a function named `findByArtist`. This function should:
   - Take in a `collection` parameter. Remember, we want to be able to search any collection!
@@ -49,9 +78,18 @@ Update the `3-music-collection.js` file to do the following:
   - Loop through the `collection` and add any album objects with a matching artist to the array.
   - Return the array with the matching results. (If no results are found, an empty array should be returned.)
 
+
+
+
+
 - Test the `findByArtist` function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection. Check that for artists with multiple matches, all are returned.
 
 > When testing your functions, write all tests in the JavaScript file!
+
+
+
+
+
 
 
 ### Stretch Goal
