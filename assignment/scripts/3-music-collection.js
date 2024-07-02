@@ -28,7 +28,14 @@ let myobj = {
   yearPublished: 2024
 }
 
-addToCollection(myCollection, "My Song Name", "Munir Abshir", 2024);
+console.log(addToCollection(myCollection, "My Song Name", "Munir Abshir", 2030));
+console.log(addToCollection(myCollection, "Thriller", "Michael Jackson", 1982));
+console.log(addToCollection(myCollection, "Shape of You", "Ed sheeran", 2017));
+console.log(addToCollection(myCollection, "Uptown Funk", "Bruno Mars and Mark Ronson", 2014));
+console.log(addToCollection(myCollection, "Rolling in the Deep", "Adele", 2010));
+console.log(addToCollection(myCollection, "Happy", "Pharrell williams", 2013));
+console.log(addToCollection(myCollection, "Blinding Lights", "The Weekend", 2019));
+
 
 
 console.log(myCollection);
