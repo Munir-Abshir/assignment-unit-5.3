@@ -27,7 +27,7 @@ let myobj = {
   artist: "Munir Abshir",
   yearPublished: 2024
 }
-
+console.log(myCollection);
 console.log(addToCollection(myCollection, "My Song Name", "Munir Abshir", 2030));
 console.log(addToCollection(myCollection, "Thriller", "Michael Jackson", 1982));
 console.log(addToCollection(myCollection, "Shape of You", "Ed sheeran", 2017));
@@ -35,14 +35,41 @@ console.log(addToCollection(myCollection, "Uptown Funk", "Bruno Mars and Mark Ro
 console.log(addToCollection(myCollection, "Rolling in the Deep", "Adele", 2010));
 console.log(addToCollection(myCollection, "Happy", "Pharrell williams", 2013));
 console.log(addToCollection(myCollection, "Blinding Lights", "The Weekend", 2019));
-
-
-
 console.log(myCollection);
 
 
+function showCollection(collection) {
+let string;
+  for ( let i = 0; i < collection.length; i++) {
+  string = JSON.stringify(collection[i]);
+  console.log(string);
+}
+
+return string;
+}
 
 
+console.log(showCollection(myCollection));
+
+
+
+function findByArtist(collection,artist) {
+  let arrayM = [];
+for ( let i = 0; i < collection.length; i++){
+    if (collection[i].artist == artist){
+      arrayM.push(collection[i]);
+    }
+  }
+
+
+
+ 
+
+  return arrayM
+
+}
+
+console.log(findByArtist(myCollection,"Michael Jackson"));
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
